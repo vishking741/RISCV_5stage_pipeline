@@ -5,7 +5,7 @@
 // 
 // Create Date: 07.03.2026 14:20:19
 // Design Name: 
-// Module Name: ff_reset
+// Module Name: D_ff
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,9 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-// ff_reset.v - flip-flop with reset and clear control
+// D_ff.v - flip-flop with reset and clear control
 
-module ff_reset
+module D_ff
 #(parameter Width = 32)
 (
     input                 clk,
