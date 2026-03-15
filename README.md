@@ -1,6 +1,6 @@
 # RISC-V 32-bit 5-Stage Pipelined Processor
 
-![Full Pipeline Architecture](link_to_your_image_here.png)
+![Full Pipeline Architecture](https://github.com/vishking741/RISCV_5stage_pipeline/blob/main/RISCV_full_pipeiline.png)
 
 This is a functional 32-bit RISC-V processor implementing a classic 5-stage pipeline. The design includes a hardware hazard detection unit, data forwarding, and branch resolution to efficiently execute a core subset of the RV32I instruction set.
 
