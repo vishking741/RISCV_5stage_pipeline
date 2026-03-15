@@ -109,6 +109,6 @@ Example showing pipeline execution with hazard handling (Stall-based resolution)
 ```assembly
 addi x10, x0, 50   # No hazards
 addi x11, x0, 25   # No hazards
-sub  x12, x10, x11  # RAW hazard on x10, x11 - resolved by STALLING
-sw   x12, 0(x5)     # RAW hazard on x12 - resolved by STALLING
+sub  x12, x10, x11  # RAW hazard on x10, x11 - resolved by FORWARDING
+sw   x12, 10(x5)     # RAW hazard on x12 - resolved by FORWARDING
 ```
