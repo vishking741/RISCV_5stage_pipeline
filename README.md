@@ -104,7 +104,7 @@ RISCV_5stage_pipeline/
 
 ## Verification Example
 
-Example showing pipeline execution with hazard handling (Stall-based resolution):
+Example showing pipeline execution with hazard handling:
 
 ```assembly
 addi x10, x0, 50   # No hazards
