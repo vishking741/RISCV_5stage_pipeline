@@ -21,12 +21,12 @@
 
 
 // instr_mem.v - instruction memory
-
+//file_name.txt / .hex -> for instr machine code
 module instr_mem
 #(
     parameter D_Width = 32,
     parameter A_Width = 32,
-    parameter instr_mem_file = "rv32i_test.txt",
+    parameter instr_mem_file = "file_name.txt",
     parameter Mem_Width = 512
 )
 (
