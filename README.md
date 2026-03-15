@@ -70,8 +70,8 @@ Occurs during branch instructions. The next correct PC isn't known until the bra
 ## Memory & Register File
 
 * **Register File:** 32 general-purpose registers (`x0` to `x31`), 32 bits wide. `x0` is hardwired to zero. It has two asynchronous read ports and one synchronous write port. It implements write-first logic for internal forwarding if a read and write happen on the same register in the same cycle.
-* **Instruction Memory (IMEM):** Read-only memory storing machine code. Initialized via `.hex` files.
-* **Data Memory (DMEM):** Read/Write memory for `lw` and `sw`.
+* **Instruction Memory (instr_mem):** Read-only memory storing machine code. Initialized via `.hex` files.
+* **Data Memory (data_mem):** Read/Write memory for `lw` and `sw`.
 
 ---
 
@@ -100,7 +100,7 @@ RISCV_5stage_pipeline/
 
 ## Key Design Features
 * **x0 is Hardwired to 0:** Register `x0` is physically tied to ground. Any write attempt to `x0` is ignored, and it always returns `32'h00000000`.
-* **Dedicated Harvard Memory:** Separate Instruction (IMEM) and Data (DMEM) memory interfaces allow the processor to fetch an instruction and access data in the same cycle without conflict (structural hazard).
+* **Dedicated Harvard Memory:** Separate Instruction (instr_mem) and Data (data_mem) memory interfaces allow the processor to fetch an instruction and access data in the same cycle without conflict (structural hazard).
 
 ## Verification Example
 
