@@ -31,7 +31,7 @@ The core implements key instructions from the standard RV32I base integer instru
 | **Load/Store** | `lw`, `sw` | Word-level memory access. |
 | **B-Type** | `beq`, `bne`, `blt`, `bge`, `bltu`, `bgeu` | Conditional branches. |
 | **J-Type** | `jal`, `jalr` | Unconditional jumps. |
-
+| **U-Type** | `lui`, `auipc`| handling large Imm values. |
 ---
 
 ## Instruction Set & Opcodes
